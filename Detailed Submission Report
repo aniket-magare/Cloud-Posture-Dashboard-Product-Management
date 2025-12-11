@@ -8,9 +8,11 @@ Persona:
 
 2.	Short write up 
 Problem Understanding Security teams struggle to see misconfigurations across multiple cloud accounts. Noise and fragmented context delay remediation. The dashboard centralizes findings, prioritizes by severity, and enables quick assignment and remediation.
+
 User Persona
 •	Cloud Security Analyst: time poor, needs quick filters, clear evidence, auditability.
 •	Security Engineering Lead: wants trends, hot spot accounts, compliance mapping.
+
 Proposed Features
 •	Unified multi account view with KPIs and trends.
 •	Filterable findings list with severity, provider, account, service, tags.
@@ -18,11 +20,11 @@ Proposed Features
 •	Assignment, suppression with audit trail.
 •	Saved views and account leaderboard (next iteration).
 
-
 Prioritization
 •	MVP: Overview KPIs, filterable list, finding details, assign/suppress.
 •	Next: Saved views, leaderboard, compliance basics.
 •	Stretch: One click remediation, risk scoring, auto owner mapping.
+
 Success Metrics
 •	% of critical/high viewed within 24h.
 •	Assign rate and time to first action.
@@ -31,7 +33,7 @@ Success Metrics
 •	Reduction in critical count over 30 days.
 •	Saved views created/shared, weekly active users.
 
-Bonus: Development action items
+3. Bonus: Development action items
 •	Backend: Normalize findings across AWS/Azure/GCP, indexed filtering, tag based ownership, immutable audit log, remediation APIs.
 •	Frontend: Severity badges, filter chips, virtualized table, URL encoded filters, accessibility (ARIA roles, keyboard nav).
 •	Governance: RBAC, suppression policy (reason + expiry), change control guardrails.
