@@ -1,0 +1,45 @@
+Cloud Posture Dashboard: Design a simple way for users to view and filter misconfigurations across multiple cloud accounts.
+1.	Problem statement and Persona
+Problem statement:
+•	“Security teams lack a simple, unified view to filter and act on misconfigurations across cloud accounts. Noise, fragmented context, and inconsistent tagging delay remediation. This dashboard centralizes findings, prioritizes by severity and impact, and enables quick assignment and action to lower time-to-remediate.”
+Persona:
+•	Primary: Cloud Security Analyst (mid-level), managing AWS/Azure/GCP across multiple accounts; time-constrained, values filters that just work, fast assignment, auditability.
+•	Secondary: Security Engineering Lead; wants trends, SLAs, and hot-spot accounts to direct remediation.
+
+2.	Short write up 
+Problem Understanding Security teams struggle to see misconfigurations across multiple cloud accounts. Noise and fragmented context delay remediation. The dashboard centralizes findings, prioritizes by severity, and enables quick assignment and remediation.
+User Persona
+•	Cloud Security Analyst: time poor, needs quick filters, clear evidence, auditability.
+•	Security Engineering Lead: wants trends, hot spot accounts, compliance mapping.
+Proposed Features
+•	Unified multi account view with KPIs and trends.
+•	Filterable findings list with severity, provider, account, service, tags.
+•	Finding details with evidence, remediation, compliance mapping.
+•	Assignment, suppression with audit trail.
+•	Saved views and account leaderboard (next iteration).
+
+
+Prioritization
+•	MVP: Overview KPIs, filterable list, finding details, assign/suppress.
+•	Next: Saved views, leaderboard, compliance basics.
+•	Stretch: One click remediation, risk scoring, auto owner mapping.
+Success Metrics
+•	% of critical/high viewed within 24h.
+•	Assign rate and time to first action.
+•	Mean time to remediate by severity.
+•	Valid suppression rate, low reopen rate.
+•	Reduction in critical count over 30 days.
+•	Saved views created/shared, weekly active users.
+
+Bonus: Development action items
+•	Backend: Normalize findings across AWS/Azure/GCP, indexed filtering, tag based ownership, immutable audit log, remediation APIs.
+•	Frontend: Severity badges, filter chips, virtualized table, URL encoded filters, accessibility (ARIA roles, keyboard nav).
+•	Governance: RBAC, suppression policy (reason + expiry), change control guardrails.
+•	Observability: Usage telemetry, ingest lag, query latency, funnels overview→list→details.
+
+
+
+
+
+
+
